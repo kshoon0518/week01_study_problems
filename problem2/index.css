@@ -1,0 +1,42 @@
+strong {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+#inputText {
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+#resultBox {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  border: 3px solid cornflowerblue;
+}
+
+.block {
+  box-sizing: border-box;
+  border: 2px solid blue;
+  background-color: rgb(205, 255, 255);
+}
+
+#example {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  border: 3px solid cornflowerblue;
+}
+
+.exampleBlock {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  background-color: rgb(205, 255, 255);
+}
