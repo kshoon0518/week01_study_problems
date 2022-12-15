@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파이썬 너 먼저 / 1주차 문제2</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1>글자 쌓기</h1>
+  <p>
+    1. <strong>문자열</strong>을 id가 'inputText'인 input창에 입력받습니다. <strong>입력 버튼</strong>을 누르면 아래의 지시사항을 수행한다.<br>
+    2. 각 글자를 1x1 크기의 블록이라고 생각하고 <strong>띄어쓰기</strong> 단위로 하나의 블록으로 묶어준다.<br>
+    ex) '안녕하세요 반갑습니다'는 5x1 크기의 블록이 2개이다.<br>
+    3. 블록을 순서대로 <strong>세로</strong>로 나열한 뒤 나열된 블록에 겹쳐지는 <strong>가장 큰 크기의 정사각형</strong>을 찾는다.<br>
+    4. 'resultBox'라는 id를 가진 'div' 태그에 'block'이라는 class를 가진 div 태그를 만들어 채워넣는다.<br>
+    ex) 3번에서 구한 정사각형이 3x3 크기라면 총 9개의 div 태그를 3x3모양으로 채워넣는다. <strong>(display: flex로 배치한다.)</strong><br>
+    5. 다른 값을 입력하고 버튼을 누르면 기존의 div태그들을 <strong>삭제하고</strong> 새로운 결과를 출력한다.<br>
+    6. 공백을 입력하면 박스를 비운다.
+  </p>
+  <input type="text" id="inputText" placeholder="텍스트를 입력하세요">
+  <button id="btn">입력</button>
+  <div id="resultBox"></div>
+  <p>Test Case1: 안녕 나는 엘리스야 / 2x2</p>
+  <p>Test Case2: 안녕하세요 존 반가워요 / 1x1</p>
+  <p>Test Case3: Hello World this is Amazing / 3x3</p>
+  <p>
+    문제 예시<br>
+    입력값: '안녕하세요 반갑습니다 오늘은 배운 내용이 어렵네요'
+  </p>
+  <img src="./example.jpg" alt="문제 예시">
+  <div id="example">
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+    <div class="exampleBlock"></div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

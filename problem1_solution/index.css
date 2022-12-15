@@ -1,0 +1,13 @@
+#result {
+  width: 150px;
+  height: 50px;
+  border: 5px solid cornflowerblue;
+  text-align: center;
+  line-height: 50px;
+}
+
+strong {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
